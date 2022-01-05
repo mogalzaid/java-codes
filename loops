@@ -60,4 +60,208 @@ public class PrintOddNEvenNumbers {
 }}
 
 
+#6
+
+package loops;
+
+public class EvenBetweenNos {
+
+	public static void main(String[] args) {
+		int i=10;
+		
+		for(i=11;i<100;i++)
+		{
+	
+			if (i%2==0) 
+			
+			System.out.println(i);
+		}
+
+	}}
+
+#7
+
+ackage loops;
+
+public class DoWhileToPrint {
+
+	public static void main(String[] args) {
+		int i=1;
+		   
+		   do
+		   {
+		   	System.out.println(i);
+			   i++;
+		   }
+		   while(i<=10);
+	      
+
+	    }
+	
+
+	}
+
+#8package loops;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int n = 153;
+		int temp = n;
+		int r, sum=0;
+		while(n>0)
+		{
+		r= n%10;
+		n = n/10;
+		sum = sum + r*r*r;
+		}
+
+		if (temp == sum)
+		System.out.println("Its an Armstrong number");
+		else
+		System.out.println("Not an Armstrong number") ;
+		}
+
+	}
+
+#9
+
+package loops;
+
+public class PrimeNumber {
+
+	public static void main(String[] args)
+	        {
+		int num= 29;
+		boolean isPrime = true;
+		for (int i=2;i<num; i++)
+		{
+		if (num%i==0)
+		{
+		isPrime = false;
+		break;
+	        }
+		}
+		if (isPrime)
+		{
+		System.out.println (num + " is a Prime number") ;
+		}
+		else
+		System.out.println ( " Number is a not Prime number") ;
+	}
+
+}
+
+#10
+
+package loops;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		int n=121;
+		int r;
+		int s=0;
+		int t=n;
+		
+		while(n>0);
+		{
+		r=n%10;
+		n=n/10;
+		s=(s*10)+r;
+		}
+		if(t==s)
+		{
+			System.out.println("Number is Palindrome");
+		}
+		else
+		{
+			System.out.println("Number is not palindrome");
+	}}
+
+}
+
+
+#11
+
+package loops;
+
+public class OddEvenUsingSwitch {
+
+	public static void main(String[] args) {
+		
+		int n=7;
+	    int r;
+	    
+	    r=n%2;
+		
+		switch(r)
+		{
+		case 0:
+		System.out.println("number is even");
+		case 1:
+		System.out.println("number is odd");
+			
+		}
+		}
+	}
+
+
+#12
+
+package loops;
+
+public class MaleFemaleUsingSwitch {
+
+	public static void main(String[] args) {
+		char gender='m';
+	
+		 switch(gender)
+		{
+		case 'm':
+			System.out.println("male");
+			break;
+		case 'f':
+			System.out.println("female");
+			break;
+		default:
+				System.out.println("match not found");
+		}
+
+	}
+
+}
+
+#13
+
+
+package loops;
+
+public class SmallestAndLargestNumber {
+
+	public static void main(String[] args) {
+		int a=98000;
+		int b=1500;
+		int c=10000;
+		
+		if(a>b && a>c)
+		{
+		System.out.println(a +"is the largest number");
+		
+		}
+		else if(a<b && b>c)
+		{
+		
+		System.out.println(b +"is the largest number");
+	
+		}
+		
+        else 
+		
+		System.out.println(c +"is the largest number");
+	
+		
+	}
+
+}
 
