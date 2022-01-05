@@ -1,0 +1,155 @@
+1#
+
+package Operators;
+
+public class ArithmeticOperators {
+
+	public static void main(String[] args) {
+		int m=6,n=2;
+		int r1=m+n;
+		int r2=m-n;
+		int r3=m*n;
+		int r4=m/n;
+
+		System.out.println(r1);
+		System.out.println(r2);
+		System.out.println(r3);
+		System.out.println(r4);
+	}
+
+}
+
+
+2#
+
+
+package Operators;
+
+public class IncrementDecrementOperators {
+
+	public static void main(String[] args) {
+		 int i=5;
+		 int j=8;
+		  i++;
+		  j--;
+		   System.out.println(i);
+		   System.out.println(j);
+
+	}
+
+}
+
+
+#3
+
+package Operators;
+
+public class EqualOperatorAndNotEqualOperators {
+
+	public static void main(String[] args) {
+		int i=4;
+		if(i==5)
+		{
+		System.out.println(i);
+		}
+			
+       if(i!=5)
+	   System.out.println("error");
+	}
+
+}
+
+
+#4
+
+package Operators;
+
+public class TwoNumbersEqualOrNot {
+
+	public static void main(String[] args) {
+		int n=5;
+	    int m=6;
+	    
+	    if(n==m)
+	    	System.out.println("numbers are equal");
+	    else
+	    	System.out.println("numbers are not equal");
+	}
+
+}  
+
+
+#5
+
+package Operators;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+	 int a=5;
+	 int b=6;
+	 int c=9;
+	 boolean itsSunny=true ;
+	 
+	 if(a<b && b<c)
+		 System.out.println("b is the middle man");
+	 
+	 if(c>b && itsSunny)
+	  System.out.println("its a good day");
+	 
+	 if(a>b || b<c)
+		 System.out.println("true");
+	 
+		 
+		
+	}
+
+}
+
+
+#6
+
+package Operators;
+
+public class RelationalOperators {
+
+	public static void main(String[] args) {
+		int i=1;
+		int j=1;
+		
+		for(i=1;i<=4;i++)
+		{
+			for(j=1;j<=4;j++)
+			{
+             System.out.print("* " );
+			}
+		System.out.println();
+		}
+	}
+if (i>=1)
+		{
+			System.out.println(i);
+		}
+}
+
+#7
+package Operators;
+
+public class SmallestAndLargestNumber {
+
+	public static void main(String[] args) {
+		int a=15;
+		int b=20;
+		int c=89;
+		
+		if(a>b && a>c)
+		System.out.println(a);
+		else if(a<b && b>c)
+		System.out.println(b);
+        else if(c>b && a<c);
+		System.out.println(c);
+
+	}
+
+}
+
