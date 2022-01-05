@@ -146,7 +146,7 @@ public class SmallestAndLargestNumber {
 		System.out.println(a);
 		else if(a<b && b>c)
 		System.out.println(b);
-        else if(c>b && a<c);
+                else 
 		System.out.println(c);
 
 	}
