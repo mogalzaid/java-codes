@@ -365,7 +365,29 @@ public class OddOrEven
 }
 
 
-#16
+#19
+
+
+package Arrays;
+
+public class MissingNumberInSortedArray {
+
+	public static void main(String[] args) {
+		int a[]= new int[100];
+		a[9]=10;
+		a[19]=20;
+		a[29]=30;
+		
+		
+		for(int i=0;i<99;i++)
+		{
+			if(a[i]!=(i+1))
+				System.out.println(i+1);
+		}
+
+	}
+
+}
 
 
 
