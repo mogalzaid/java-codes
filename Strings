@@ -1,0 +1,159 @@
+#1
+
+package strings;
+
+public class waysToWriteString {
+
+	public static void main(String[] args) {
+		char[] c= {'z','a','i','d'};
+    String h="zaid";
+		String s=new String(c);
+		String d=new String ();
+		StringBuffer f= new StringBuffer();
+		StringBuilder g=new StringBuilder();	
+	}
+
+}
+
+
+#2 #3 #4 #5
+
+
+package strings;
+
+public class Concatenating
+{
+
+	public static void main(String[] args) 
+  {
+		
+		String a="Zaid Ur ";
+		String b="Rehman";
+    String c="Zaid Ur "+"Rehman";
+		System.out.println(a+b);
+    System.out.println(c);
+    System.out.println(a.length());   // length of string
+    System.out.println(c.substring(8, 14));  //substring
+    System.out.println(c.indexOf("R"));    // indexof
+}
+}
+
+
+#6
+package strings;
+import java.util.regex.*;
+public class matches {
+
+	public static void main(String[] args)
+	{
+		Pattern p = Pattern.compile(".s");
+		Matcher m = p. matcher("as");
+	
+		System.out.println(m.matches());
+	}
+
+}
+
+
+
+
+#7
+package strings;
+
+public class comparisions 
+{
+
+	public static void main(String[] args) {
+		String s1="hello world";
+		String s2="Hello world";
+				
+				System.out.println(s1.equals(s2));              //equals()
+				System.out.println(s1.equalsIgnoreCase(s2));    //equalsIgnoreCase()
+        
+        String s4=s3.trim();      //trim()
+			System.out.println(s4);
+			
+			String s5= s3.trim().replace("wonderful","harsh");
+					System.out.println(s5);            //replace()
+	}
+}
+
+
+
+#8
+package strings;
+
+public class comparisions 
+{
+
+	public static void main(String[] args) {
+		String s1="hello world";
+		String s2="Hello world";
+		String s3="   its a wonderful day   ";
+					System.out.println(s1.equals(s2));              //equals()
+				System.out.println(s1.equalsIgnoreCase(s2));    //equalsIgnoreCase()
+        
+				System.out.println(s1.compareTo(s2));
+				System.out.println(s1.compareToIgnoreCase(s2));
+        
+				System.out.println(s3.startsWith("its"));                       //startsWith()
+        
+				System.out.println(s3.endsWith("a"));                          //endsWith()
+        
+			
+				
+			String s4=s3.trim();                                             //trim()
+			System.out.println(s4);
+			
+			String s5= s3.trim().replace("wonderful","harsh");
+					System.out.println(s5);                                  //replace()
+	}
+}
+
+
+#11
+
+
+
+package strings;
+
+public class Split {
+
+	public static void main(String[] args) {
+           String a="splitting words using split";
+           String[] arr= a.split("\\s+");
+           
+           for(String word:arr)
+           {
+        	   System.out.println(word);
+           }
+	}
+
+}
+
+#12 #13 #14
+
+package strings;
+
+public class DifferentCases {
+
+	public static void main(String[] args) {
+		String a="abcdefg";
+		String b="HIJKLMNOP";
+		
+		
+		int i=10;
+	String d =String.valueOf(i);
+	System.out.println(d);
+	//---------------------------------------------------
+		System.out.println(a.toUpperCase());
+		System.out.println(b.toLowerCase());
+
+	}
+
+}
+
+
+
+
+
