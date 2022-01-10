@@ -1,0 +1,52 @@
+#1 #3 #5 #7
+
+package staticprogrames;
+
+public class InstanceAndStatic {
+	
+	int i=1;
+	int j=2;
+	static int a=4;
+	static int b=5;
+	
+	
+	static void static1()
+	{
+		System.out.println("static"+"."+ a);
+	}
+static void static2()
+{
+	System.out.println("static"+"."+b);
+}
+
+void instance1()
+{
+	System.out.println("instance"+"."+ a);
+}
+ void instance2()
+ {
+	 this.static1();                                 // static method in instance method.
+	 System.out.println("instance"+"."+j+ ","+i);   // static variable in instance method.
+ }
+	
+ public static void main(String[] args) 
+	{
+	 InstanceAndStatic k=new InstanceAndStatic();
+	 
+	static1();
+	static2();
+	 k.instance1();
+	 k.instance2();
+			 
+		
+	}
+
+}
+
+
+#2 #4 #6 -instance variables and methods cannot  be accessed inside a STATIC method.
+
+
+
+
+
