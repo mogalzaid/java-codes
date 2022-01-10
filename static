@@ -1,4 +1,4 @@
-#1 #3 #5 #7
+#1 #3 #5 #6  #7
 
 package staticprogrames;
 
@@ -33,6 +33,12 @@ void instance1()
 	{
 	 InstanceAndStatic k=new InstanceAndStatic();
 	 
+	 System.out.println(a);
+	 System.out.println(b);
+	 System.out.println(k.i);
+	System.out.println(k.j);
+	 
+	 
 	static1();
 	static2();
 	 k.instance1();
@@ -44,7 +50,7 @@ void instance1()
 }
 
 
-#2 #4 #6 -instance variables and methods cannot  be accessed inside a STATIC method.
+#2 #4  -instance variables and methods cannot  be accessed inside a STATIC method.
 
 
 
