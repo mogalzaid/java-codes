@@ -1,0 +1,85 @@
+package Inheritance;
+class a
+{
+	public int add(int i,int j)
+	{
+		return i+j;
+		
+	}
+	public  int sub(int i,int j)
+	{
+		return i-j;
+	}
+	public void show()
+	{
+		System.out.println("thank you -a");
+	}
+}
+
+class b extends a
+{
+	
+	public int multi(int i,int j)
+	{
+	return i*j;
+	}
+	public int div(int i,int j)
+	{
+		return i/j;
+	}
+	public void show()
+	{
+		super.show();
+		System.out.println("thank you-b");
+	}	
+}
+
+class c extends b
+{
+	public int rem(int i,int j)
+	{
+	return i%j;
+	}
+	public int addi(int i ,int j,int k)
+	{
+		return i+j+k;
+	}
+	public void show()
+	{
+		super.show();
+		System.out.println("thank you-c");
+	}
+	
+}
+
+public class project 
+{
+
+	public static void main(String[] args) 
+	{
+		a w1=new a();
+		b w2=new b();
+		c w3=new c();
+		
+	int result1=w1.add(4, 5);System.out.println("addition="+result1);
+	int result2=w1.sub(8, 5);System.out.println("substraction="+result2);
+	int result3=w2.multi(8, 4);System.out.println("multiplication="+result3);
+	int result4=w2.div(8, 4);System.out.println("division="+result4);
+	int result5=w3.rem(8, 4);System.out.println("remainder"+result5);
+	int result6=w3.addi(5, 4, 7);System.out.println("addition="+result6);
+	
+	System.out.println("");
+	
+	System.out.println("run time polymorphism");
+	
+      a obj=new b();
+      obj.show();
+      System.out.println("");
+		obj=new c();
+		obj.show();  //dynamic method dispatch
+		
+		
+		
+	}
+
+}
